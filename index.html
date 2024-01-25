@@ -2,125 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #121212; /* Dark background */
-            color: #e0e0e0; /* Light text color for contrast */
-            transition: background-color 0.3s ease;
-        }
-        .hero {
-            background: url('https://source.unsplash.com/1600x900/?night-sky') no-repeat center center/cover;
-            padding: 4rem 0;
-            color: white;
-            text-align: center;
-            transition: padding 0.3s ease;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            animation: fadeInDown 2s ease;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            line-height: 1.5;
-            animation: fadeInUp 2s ease;
-        }
-        .gallery-img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
-        .gallery-img:hover {
-            transform: scale(1.05);
-        }
-        nav ul li a {
-            color: #e0e0e0; /* Light color for links */
-        }
-        footer {
-            background-color: #202020; /* Dark footer */
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            transition: background-color 0.3s ease;
-        }
-        footer a {
-            color: lightblue;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        footer a:hover {
-            color: #fff;
-        }
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-    <title>John Pascuzzi's Astrophotography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrophotography Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="container-fluid">
-        <ul>
-            <li><strong>John Pascuzzi Astrophotography</strong></li>
-        </ul>
-        <ul>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact" role="button">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="hero">
-        <h1>Welcome to My Universe</h1>
-        <p>Capturing the Cosmos</p>
-    </div>
-    <main class="container">
-        <div class="grid">
-            </section>
-            <section id="about">
-                <h2>About John Pascuzzi</h2>
-                <p>I am an avid astrophotographer dedicated to capturing the awe-inspiring beauty of the night sky. My journey in astrophotography has taken me to distant galaxies and star clusters, bringing them closer for everyone to admire.</p>
-            </section>
-            <section id="gear">
-                <h2>My Gear</h2>
-                <p>I use state-of-the-art telescopes and cameras to capture high-quality images of celestial objects. Each piece of equipment helps me reveal the hidden wonders of our universe.</p>
-            </section>
-        </div>
-   </main> 
-    <section aria-label="Subscribe example">
-        <div class="container">
-            <article>
-                <h2>Join the Stars</h2>
-                <p>Subscribe to My Newsletter</p>
-                <form class="grid">
-                    <input type="text" id="firstname" name="firstname" placeholder="Your Name" aria-label="Your Name" required />
-                    <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required />
-                    <button type="submit" onclick="event.preventDefault()">Stay Updated</button>
-                </form>
-            </article>
-        </div>
-    </section>
+    <header>
+        <!-- Navigation Bar -->
+        <!-- You can add more links or adjust as per your need -->
+        <nav>
+            <ul>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <!-- Gallery items will go here -->
+            <!-- Each item can have an image, title, and description -->
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <!-- Add your information here -->
+            <!-- This is where you'll tell your story and share details about your journey and equipment -->
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <!-- Contact form or information will go here -->
+            <!-- I'll add placeholders that you can replace with your actual contact details -->
+        </section>
+    </main>
+
     <footer>
-        <small><a href="#">Privacy Policy</a> • <a href="#">Terms of Use</a></small>
+        <!-- Footer content -->
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
